@@ -7,23 +7,94 @@
   <title>예인교회 청년부</title>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
   <link rel="stylesheet" href="libs/css/custom.css">
-  <script>
-    require('bootstrap');
-    $(document).ready(function(){
-      $("h1").click(function(){
-        alert("Hello Whale.");
-      })
-    })
-  </script>
+  <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> -->
+  <style>
+  @import url(http://fonts.googleapis.com/earlyaccess/jejugothic.css);
+  h1,h2{  	
+  font-family: 'Jeju Gothic', serif;
+  }
+  </style>
 </head>
 <body>
-  <div class="jumbotron text-center">
-    <h1 style="font-size: 40px;padding-top: 20px;">
+  
+  <div class="jumbotron text-center" style="color:white;background-color:#747474;">
+    <h1 style="font-weight:500;padding-top: 20px;">
       예인교회 청년부</h1>
-    <h2>셀 출석</h2>
+    <h2>셀 출석부</h2>
+    <span class="badge badge-primary">Primary</span>
+    <span class="badge badge-success">Success</span>
+    <span class="badge badge-danger">Danger</span>
+    <span class="badge badge-warning">Warning</span>
+    <span class="badge badge-info">Info</span>
+    <span class="badge badge-light">Light</span>
+    <span class="badge badge-dark">Dark</span>
   </div>
 
+  <div style="width:100%;height:500px;">
+  <div class="col-md-6" style="float:left;">
+      <div class="list-group">
+       <a href="#" class="list-group-item active">
+         남자
+       </a>
+       <a href="david.jpg" class="list-group-item">이스라엘(가)</a>
+       <a href="#" class="list-group-item">오석기</a>
+       <a href="#" class="list-group-item">요르단</a>
+       <a href="#" class="list-group-item">이집트</a>
+       <a href="#" class="list-group-item">산르울파</a>
+       <a href="#" class="list-group-item">예루살렘</a>
+       <a href="#" class="list-group-item">갈릴리</a>
+       <a href="#" class="list-group-item">가지안텝</a>
+     </div>
+   </div>
+  
+  <div class=" col-md-6" style="float:left;">
+    <div class="list-group">
+        <a href="#" class="list-group-item active">
+          여자
+        </a>
+        <a href="#" class="list-group-item">이스라엘(가)</a>
+        <a href="#" class="list-group-item">이스라엘(나)</a>
+        <a href="#" class="list-group-item">요르단</a>
+        <a href="#" class="list-group-item">이집트</a>
+        <a href="#" class="list-group-item">산르울파</a>
+        <a href="#" class="list-group-item">예루살렘</a>
+        <a href="#" class="list-group-item">갈릴리</a>
+        <a href="#" class="list-group-item">가지안텝</a>
+        <a class="list-group-item" data-target="#layerpop" data-toggle="modal">오석기</a><br/>
+      </div>
+</div>
+</div>
+<div class="modal fade" id="layerpop" >
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <!-- header -->
+      <div class="modal-header">
+        <!-- 닫기(x) 버튼 -->
+        <button type="button" class="close" data-dismiss="modal">×</button>
+        <!-- header title -->
+        <h4 class="modal-title"></h4>
+      </div>
+      <!-- body -->
+      <div class="modal-body">
+            황믿음
+      </div>
+      <div class="modal-body">
+            손창우
+      </div>
+      <div class="modal-body">
+            장영인
+      </div>
+      <div class="modal-body">
+            강병찬
+      </div>
+      <!-- Footer -->
+      <div class="modal-footer">
 
+        <button type="button" class="btn btn-default" data-dismiss="modal">닫기</button>
+      </div>
+    </div>
+  </div>
+</div>
   <!-- jquery $ bootstrap -->
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>

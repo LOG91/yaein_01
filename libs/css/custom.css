@@ -13,6 +13,7 @@
 .fontBold {
   font-weight: bold;
 }
+
 .btn {
   padding: 14px 24px;
   border: 0 none;
@@ -40,5 +41,8 @@
   box-shadow: none;
 }
 
-
-
+.inline{
+  display:inline-block;
+  vertical-align:middle;
+  padding-left:10px;
+}

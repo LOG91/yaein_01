@@ -7,17 +7,28 @@
   <title>예인교회 청년부</title>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
   <link rel="stylesheet" href="libs/css/custom.css">
-  <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
+  <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
   <style>
   @import url(http://fonts.googleapis.com/earlyaccess/jejugothic.css);
   h1,h2{  	
   font-family: 'Jeju Gothic', serif;
   }
+
+  th,td {
+    text-align:center;
+  }
+  .list-group-item:hover {
+    background-color:#EAEAEA;
+  }
+ 
   </style>
 </head>
 <body>
-  
-  <div class="jumbotron text-center" style="color:white;background-color:#747474;">
+    
+        
+  <div class="jumbotron text-center" style="color:white;background-color:#BDBDBD;">
     <h1 style="font-weight:500;padding-top: 20px;">
       예인교회 청년부</h1>
     <h2>셀 출석부</h2>
@@ -29,14 +40,32 @@
     <span class="badge badge-light">Light</span>
     <span class="badge badge-dark">Dark</span>
   </div>
-
+  
   <div style="width:100%;height:500px;">
   <div class="col-md-6" style="float:left;">
       <div class="list-group">
-       <a href="#" class="list-group-item active">
+       <div href="#" class="list-group-item" style="background-color:#EAEAEA;">
          남자
-       </a>
-       <a href="david.jpg" class="list-group-item">이스라엘(가)</a>
+       </div>
+        <a href="" data-target="#layerpop" data-toggle="modal" style="text-decoration:none; color:black ;">
+            <div class="list-group-item" data-target="#layerpop" data-toggle="modal">오석기
+                <div class="inline" style="float:right;">
+                    <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="checkbox-n">
+                        <input style="padding-left:100px;"type="checkbox" id="checkbox-n" class="mdl-checkbox__input" unchecked onclick="return false;"> 
+                    </label>
+                  </div>
+             </div>
+        </a>
+         
+         <div class="list-group-item" data-target="#layerpop" data-toggle="modal">오윤기
+            <div class="inline" style="float:right;">
+                <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="checkbox-n">
+                    <input style="padding-left:100px;"type="checkbox" id="checkbox-n" class="mdl-checkbox__input" unchecked onclick="return false;"> 
+                </label>
+              </div>
+         </div>
+       
+       <a class="list-group-item" data-target="#layerpop" data-toggle="modal">오석기</a>              
        <a href="#" class="list-group-item">오석기</a>
        <a href="#" class="list-group-item">요르단</a>
        <a href="#" class="list-group-item">이집트</a>
@@ -44,14 +73,15 @@
        <a href="#" class="list-group-item">예루살렘</a>
        <a href="#" class="list-group-item">갈릴리</a>
        <a href="#" class="list-group-item">가지안텝</a>
+       
      </div>
    </div>
-  
   <div class=" col-md-6" style="float:left;">
     <div class="list-group">
-        <a href="#" class="list-group-item active">
-          여자
-        </a>
+        <div href="#" class="list-group-item" style="background-color:#EAEAEA;">
+            여자
+          </div>
+        
         <a href="#" class="list-group-item">이스라엘(가)</a>
         <a href="#" class="list-group-item">이스라엘(나)</a>
         <a href="#" class="list-group-item">요르단</a>
@@ -60,11 +90,36 @@
         <a href="#" class="list-group-item">예루살렘</a>
         <a href="#" class="list-group-item">갈릴리</a>
         <a href="#" class="list-group-item">가지안텝</a>
-        <a class="list-group-item" data-target="#layerpop" data-toggle="modal">오석기</a><br/>
+        <table class="mdl-data-table mdl-js-data-table mdl-data-table--selectable mdl-shadow--2dp">
+            <thead>
+              <tr>
+                <th class="mdl-data-table__cell--non-numeric">Material</th>
+                <th>Quantity</th>
+                <th>Unit price</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="mdl-data-table__cell--non-numeric">Acrylic (Transparent)</td>
+                <td>25</td>
+                <td>$2.90</td>
+              </tr>
+              <tr>
+                <td class="mdl-data-table__cell--non-numeric">Plywood (Birch)</td>
+                <td>50</td>
+                <td>$1.25</td>
+              </tr>
+              <tr>
+                <td class="mdl-data-table__cell--non-numeric">Laminate (Gold on Blue)</td>
+                <td>10</td>
+                <td>$2.35</td>
+              </tr>
+            </tbody>
+          </table>
       </div>
 </div>
 </div>
-<div class="modal fade" id="layerpop" >
+<div class="modal fade" id="layerpop"tabindex='-1' >
   <div class="modal-dialog">
     <div class="modal-content">
       <!-- header -->
@@ -75,29 +130,88 @@
         <h4 class="modal-title"></h4>
       </div>
       <!-- body -->
-      <div class="modal-body">
-            황믿음
-      </div>
-      <div class="modal-body">
-            손창우
-      </div>
-      <div class="modal-body">
-            장영인
-      </div>
-      <div class="modal-body">
-            강병찬
-      </div>
+      <!-- <ul class="list-group checked-list-box"> -->
+          <div class="container">           
+              <table class="table ">
+                <thead style="background-color:#747474;color:white;">
+                  <tr>
+                    <th>이름</th>
+                    <th>셀</th>
+                    <th>대</th>
+                    <th>청</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>황믿음</td>
+                    <td>
+                      <div class="inline">
+                        <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="checkbox-1">
+                            <input style="padding-left:100px;"type="checkbox" id="checkbox-1" class="mdl-checkbox__input">
+                          </label>
+                        </div>  
+                    </td>
+                    <td>
+                        <div class="inline">
+                            <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="checkbox-2">
+                                <input style="padding-left:100px;"type="checkbox" id="checkbox-2" class="mdl-checkbox__input">
+                              </label>
+                            </div>
+                    </td>
+                    <td>
+                        <div class="inline">
+                            <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="checkbox-3">
+                                <input style="padding-left:100px;"type="checkbox" id="checkbox-3" class="mdl-checkbox__input">
+                              </label>
+                            </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>장영인</td>
+                    <td>we</td>
+                    <td>we</td>
+                    <td>we</td>
+                  </tr>
+                  <tr>
+                    <td>손창우</td>
+                    <td>we</td>
+                    <td>we</td>
+                    <td>we</td>
+                  </tr>
+                  <tr>
+                    <td>강병찬</td>
+                    <td>we</td>
+                    <td>we</td>
+                    <td>we</td>
+                    </tr>
+                </tbody>
+              </table>
+            </div>
+      
       <!-- Footer -->
       <div class="modal-footer">
 
-        <button type="button" class="btn btn-default" data-dismiss="modal">닫기</button>
+        <button type="button" class="btn btn-default" style="padding:7px; background-color:#747474;color:white;" data-dismiss="modal">저장</button>
+        <button type="button" class="btn btn-default" style="padding:7px; background-color:#747474;color:white;" data-dismiss="modal">닫기</button>
       </div>
     </div>
   </div>
 </div>
-  <!-- jquery $ bootstrap -->
-  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+
+  
+<!-- jquery $ bootstrap -->
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+  <script>
+    $(document).ready(function(){
+      $(".modal-footer .btn").click(function(){
+        console.log('weff');
+        document.querySelector('.mdl-js-checkbox').MaterialCheckbox.check();
+      })
+
+      
+    })
+      </script>
 </body>
 </html>

@@ -30,22 +30,27 @@ var route_loader = require('./routes/route_loader');
 // 익스프레스 객체 생성
 var app = express();
 
-route_loader.init(app, express.Router());
-
 // body-parser를 사용해  application/x-www-form-urlencoded 파싱
 app.use(bodyParser.urlencoded({ extended: false }));
 
 // body-parser를 사용해 application/json 파싱
 app.use(bodyParser.json());
 
+route_loader.init(app, express.Router());
+
 var router = express.Router();
 
 app.use('/', router);
 
+// 뷰 엔진 설정
+app.set('views', __dirname + '/views');
+app.set('view engine', 'ejs');
+console.log('뷰 엔진이 ejs로 설정되었습니다.');
+
 app.use(static(path.join(__dirname, '/public')));
-// app.get('/', function(req, res) {
-//     res.send('Hello Yaein Application');
-// })
+
 app.listen(config.server_port, function() {
     console.log('Server Starting .');
+
+    database.init(app, config);
 });

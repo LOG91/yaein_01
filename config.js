@@ -3,15 +3,16 @@ module.exports = {
     db_url: 'mongodb://localhost:27017/local',
 
     db_schemas: [{
-        file: './user_schema',
-        collection: 'user',
-        schemaName: 'UserSchema',
-        modelName: 'UserModel'
+        file: './cell_schema',
+        collection: 'network',
+        schemaName: 'CellSchema',
+        modelName: 'CellModel'
     }],
 
-    // route_info : [
-    //   {file : './user', path : './process/'}
-    // ]
+    route_info: [
+        { file: './user', path: '/', method: 'index' },
+        { file: './user', path: '/process/addcell', method: 'addcell', type: 'post' }
+    ]
 
 
 }
